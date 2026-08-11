@@ -18,7 +18,17 @@
   gainsHeading?.remove();
   const ta = [...document.querySelectorAll('p')].find(el => el.textContent.trim() === '也在招募助教');
   const anchor = ta?.closest('.mt-6') || ta?.parentElement;
-  if (!anchor?.parentElement) return;
+  if (!anchor?.parentElement) {
+    window.__fdexMountAttempts = (window.__fdexMountAttempts || 0) + 1;
+    if (window.__fdexMountAttempts < 20) {
+      setTimeout(() => {
+        const retryScript = document.createElement('script');
+        retryScript.src = `./fdemac-extension.js?retry=${window.__fdexMountAttempts}`;
+        document.body.appendChild(retryScript);
+      }, 500);
+    }
+    return;
+  }
   anchor.parentElement.insertBefore(branch, anchor);
 
   const modal = document.createElement('div'); modal.className='fdex-modal'; modal.setAttribute('role','dialog'); modal.setAttribute('aria-label','专属邀请海报');
