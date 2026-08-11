@@ -22,7 +22,16 @@
   anchor.parentElement.insertBefore(branch, anchor);
 
   const modal = document.createElement('div'); modal.className='fdex-modal'; modal.setAttribute('role','dialog'); modal.setAttribute('aria-label','专属邀请海报');
-  modal.innerHTML=`<div class="fdex-modal-card"><button class="fdex-close" aria-label="关闭">×</button><div class="fdex-poster"><div class="fdex-poster-copy"><small>观猹 FDE 实战共学营</small><h3>和我一起共学，<br><em>冲击 Mac mini</em></h3><p>从真实企业任务出发，完成 Agent 项目交付。扫码报名，双方立即解锁录播课程。</p><p style="margin-top:28px;font-weight:700;color:#fff">猹友 Raccoon 推荐你来学</p></div><div class="fdex-qr"><img src="https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=${encodeURIComponent(inviteUrl)}" alt="专属邀请二维码"><b>扫码报名 · 一起共学</b></div></div><div class="fdex-modal-actions"><button class="fdex-btn secondary" data-copy-text>复制配套文案</button><button class="fdex-btn" data-save>保存海报</button></div></div>`;
+  modal.innerHTML=`<div class="fdex-modal-card fdex-poster-modal"><button class="fdex-close" aria-label="关闭">×</button><div class="fdex-poster">
+    <header class="fdex-poster-brand"><span class="fdex-poster-logo">Watcha<sup>°</sup></span><span>观猹 AI 漫剧共学营</span></header>
+    <section class="fdex-poster-hero"><div><small>我在「观猹」学 AI</small><h3>邀请好友一起共学<br><em>边学边赢好礼</em></h3><p>完成作品、解锁课程，还有机会赢取 Mac mini</p></div><img src="./assets/watcha-trophy.png" alt="观猹奖杯"></section>
+    <section class="fdex-poster-benefits">
+      <article><b>大厂讲师带队</b><span>跟随一线实战讲师，掌握 AI 漫剧完整创作方法</span></article>
+      <article><b>边学边做作品</b><span>从创意、分镜到生成制作，完成自己的 AI 漫剧作品</span></article>
+      <article><b>共学还能赢好礼</b><span>邀请好友共同学习，解锁录播课程、瓜子和 Mac mini 等福利</span></article>
+    </section>
+    <section class="fdex-poster-inviter"><div class="fdex-poster-person"><img src="./assets/avatars/raccoon.svg" alt="Raccoon 的头像"><div><small>你的共学伙伴</small><b>Raccoon 同学，学习 AI 中</b><span>邀请你一起加入观猹 AI 漫剧共学营</span></div></div><div class="fdex-poster-qr"><img src="https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=${encodeURIComponent(inviteUrl)}" alt="专属邀请二维码"><b>扫描我的专属二维码报名</b><span>成功加入后，我们双方均可解锁一门录播课程</span></div></section>
+  </div><div class="fdex-modal-actions"><button class="fdex-btn secondary" data-copy-text>复制配套文案</button><button class="fdex-btn" data-save>保存海报</button></div></div>`;
   document.body.appendChild(modal);
   const toast=document.createElement('div');toast.className='fdex-toast';toast.setAttribute('role','status');document.body.appendChild(toast);
   const say=t=>{toast.textContent=t;toast.classList.add('show');setTimeout(()=>toast.classList.remove('show'),1600)};
@@ -33,6 +42,6 @@
   branch.querySelector('[data-rules]').onclick=()=>{branch.querySelector('[data-rules-box]').open=true;window.scrollTo({top:branch.querySelector('[data-rules-box]').getBoundingClientRect().top+window.scrollY-100,behavior:'smooth'})};
   branch.querySelectorAll('[data-shop]').forEach(el=>el.onclick=()=>window.open('https://watcha.cn/quest','_blank'));branch.querySelector('[data-refresh]').onclick=()=>say('排行榜已更新');
   const shelfTrack=branch.querySelector('.fdex-shelf-track');shelfTrack.innerHTML+=shelfTrack.innerHTML;
-  modal.querySelector('[data-copy-text]').onclick=async()=>{const text=`猹友推荐你来学！和我一起加入观猹 FDE 实战共学营，边学边解锁录播课与瓜子好礼，还有机会赢 Mac mini：${inviteUrl}`;try{await navigator.clipboard.writeText(text);say('配套文案已复制')}catch{say('复制失败，请稍后重试')}};modal.querySelector('[data-save]').onclick=()=>say('原型预览：正式版将生成高清海报');
+  modal.querySelector('[data-copy-text]').onclick=async()=>{const text=`我在「观猹」学 AI！邀请你一起加入观猹 AI 漫剧共学营，跟随一线实战讲师边学边做作品，还能解锁录播课程、瓜子和 Mac mini 等福利：${inviteUrl}`;try{await navigator.clipboard.writeText(text);say('配套文案已复制')}catch{say('复制失败，请稍后重试')}};modal.querySelector('[data-save]').onclick=()=>say('原型预览：正式版将生成高清海报');
   update();
 })();
