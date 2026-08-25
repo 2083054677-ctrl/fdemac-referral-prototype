@@ -38,6 +38,7 @@
 .fdex-track-card .fdex-head h4{grid-row:1/3}
 .fdex-complete-label{color:#99a09b;font-size:10px}
 .fdex-complete-count{color:#69716c;font-size:11px;font-weight:600}
+.fdex-track-desc{grid-column:1/-1;margin:6px 0 0;color:var(--fx-muted);font-size:11px;line-height:1.55}
 .fdex-track-card .fdex-steps{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin:0 -10px;padding:0}
 .fdex-track-card .fdex-steps:before{content:"";display:block;position:absolute;left:9%;right:9%;top:6px;height:10px;border-radius:99px;background:#e4f3eb}
 .fdex-track-card .fdex-step{position:relative;text-align:center}
