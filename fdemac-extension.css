@@ -111,10 +111,10 @@
 .fdex-branch>.fdex-rank-card .fdex-podium-wrap{padding:11px 5% 10px}
 .fdex-branch>.fdex-rank-card .fdex-podium{grid-template-columns:.82fr 1.08fr .82fr;align-items:end;gap:14px}
 .fdex-branch>.fdex-rank-card .fdex-podium-card{padding:25px 7px 7px}
-.fdex-branch>.fdex-rank-card .fdex-podium-card.top1{min-height:146px}
-.fdex-branch>.fdex-rank-card .fdex-podium-card.top2{min-height:124px}
-.fdex-branch>.fdex-rank-card .fdex-podium-card.top3{min-height:108px}
-@media(max-width:760px){.fdex-branch>.fdex-rank-card .fdex-podium-wrap{padding-left:0;padding-right:0}.fdex-branch>.fdex-rank-card .fdex-podium{gap:6px}.fdex-branch>.fdex-rank-card .fdex-podium-card.top1{min-height:132px}.fdex-branch>.fdex-rank-card .fdex-podium-card.top2{min-height:120px}.fdex-branch>.fdex-rank-card .fdex-podium-card.top3{min-height:108px}}
+.fdex-branch>.fdex-rank-card .fdex-podium-card.top1{height:168px;min-height:0}
+.fdex-branch>.fdex-rank-card .fdex-podium-card.top2{height:140px;min-height:0}
+.fdex-branch>.fdex-rank-card .fdex-podium-card.top3{height:118px;min-height:0}
+@media(max-width:760px){.fdex-branch>.fdex-rank-card .fdex-podium-wrap{padding-left:0;padding-right:0}.fdex-branch>.fdex-rank-card .fdex-podium{gap:6px}.fdex-branch>.fdex-rank-card .fdex-podium-card.top1{height:150px;min-height:0}.fdex-branch>.fdex-rank-card .fdex-podium-card.top2{height:132px;min-height:0}.fdex-branch>.fdex-rank-card .fdex-podium-card.top3{height:116px;min-height:0}}
 .fdex-branch>.fdex-track-card,.fdex-branch>.fdex-rank-card,.fdex-branch>.fdex-shelf{width:100%;min-width:0}
 .fdex-branch>.fdex-track-card .fdex-head{align-items:stretch;flex-direction:column}
 .fdex-branch>.fdex-track-card .fdex-head>.fdex-track-copy{width:100%;flex-basis:auto}
