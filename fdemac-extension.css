@@ -97,3 +97,22 @@
 .fdex-rank-card .fdex-podium-card.top1 .fdex-podium-prize{font-size:13px}
 .fdex-rank-card .fdex-podium-user{display:grid!important;gap:1px}
 @media(max-width:900px){.fdex-rank-card{display:block}.fdex-rank-card .fdex-board{margin-top:12px;border-top:1px solid var(--fx-line);border-left:0;padding-top:11px;padding-left:0}.fdex-rank-card .fdex-podium-card{min-height:138px}.fdex-rank-card .fdex-podium-card.top1{min-height:145px}}
+.fdex-branch{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-areas:"kicker kicker" "title title" "track rank" "shelf rank";column-gap:14px;align-items:start}
+.fdex-branch>.fdex-kicker{grid-area:kicker}
+.fdex-branch>.fdex-title{grid-area:title}
+.fdex-branch>.fdex-track-card{grid-area:track}
+.fdex-branch>.fdex-shelf{grid-area:shelf}
+.fdex-branch>.fdex-rank-card{grid-area:rank;display:block}
+.fdex-branch>.fdex-rank-card .fdex-board{margin-top:12px;border-top:1px solid var(--fx-line);border-left:0;padding-top:11px;padding-left:0}
+.fdex-branch>.fdex-rank-card .fdex-podium-card{min-height:138px}
+.fdex-branch>.fdex-rank-card .fdex-podium-card.top1{min-height:145px}
+.fdex-branch>.fdex-rank-card>.fdex-head,.fdex-branch>.fdex-rank-card>.fdex-rules{grid-column:auto}
+.fdex-branch>.fdex-track-card,.fdex-branch>.fdex-rank-card,.fdex-branch>.fdex-shelf{width:100%;min-width:0}
+.fdex-branch>.fdex-track-card .fdex-head{align-items:stretch;flex-direction:column}
+.fdex-branch>.fdex-track-card .fdex-head>.fdex-track-copy{width:100%;flex-basis:auto}
+.fdex-branch>.fdex-track-card .fdex-track-desc{font-size:9px;white-space:nowrap}
+.fdex-branch>.fdex-track-card .fdex-track-actions{width:100%;max-width:none}
+.fdex-branch>.fdex-shelf{grid-template-columns:90px minmax(0,1fr) auto;gap:7px}
+.fdex-branch>.fdex-shelf .fdex-shelf-title>img{width:25px;height:25px}
+.fdex-branch>.fdex-shelf .fdex-shelf-title span{display:none}
+@media(max-width:900px){.fdex-branch{display:block}.fdex-branch>.fdex-shelf{margin-top:14px}}
