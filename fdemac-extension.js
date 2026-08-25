@@ -15,8 +15,7 @@
   const gainsList = gainsHeading?.nextElementSibling;
   if (gainsList?.tagName === 'UL') gainsList.remove();
   gainsHeading?.remove();
-  const ta = [...document.querySelectorAll('p')].find(el => el.textContent.trim() === '也在招募助教');
-  const anchor = ta?.closest('.mt-6') || ta?.parentElement;
+  const anchor = [...document.querySelectorAll('h3')].find(el => el.textContent.trim() === '课程主线 · 从业务命题到企业级 Agent 交付');
   if (!anchor?.parentElement) {
     window.__fdexMountAttempts = (window.__fdexMountAttempts || 0) + 1;
     if (window.__fdexMountAttempts < 20) {
