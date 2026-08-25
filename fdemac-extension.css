@@ -86,3 +86,14 @@
 .fdex-current-marker{position:absolute;z-index:3;left:clamp(31px,var(--progress),calc(100% - 31px));top:0;transform:translateX(-50%);white-space:nowrap}
 .fdex-current-marker span{display:block;border-radius:99px;background:#276f4f;padding:3px 8px;color:#fff;font-size:9px;font-weight:750;line-height:1.35;box-shadow:0 2px 7px rgba(34,97,69,.16)}
 .fdex-current-marker:after{content:"";display:block;width:1px;height:8px;margin:0 auto;background:#56a77b}
+.fdex-rank-card{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);column-gap:14px;align-items:start}
+.fdex-rank-card>.fdex-head,.fdex-rank-card>.fdex-rules{grid-column:1/-1}
+.fdex-rank-card .fdex-prizes,.fdex-rank-card .fdex-board{width:100%;min-width:0}
+.fdex-rank-card .fdex-board{margin-top:0;border-top:0;border-left:1px solid var(--fx-line);padding-top:0;padding-left:14px}
+.fdex-rank-card .fdex-podium{gap:4px}
+.fdex-rank-card .fdex-podium-card{min-width:0;min-height:132px;padding:31px 3px 7px}
+.fdex-rank-card .fdex-podium-card.top1{min-height:140px}
+.fdex-rank-card .fdex-podium-prize{font-size:11px;white-space:nowrap}
+.fdex-rank-card .fdex-podium-card.top1 .fdex-podium-prize{font-size:13px}
+.fdex-rank-card .fdex-podium-user{display:grid!important;gap:1px}
+@media(max-width:900px){.fdex-rank-card{display:block}.fdex-rank-card .fdex-board{margin-top:12px;border-top:1px solid var(--fx-line);border-left:0;padding-top:11px;padding-left:0}.fdex-rank-card .fdex-podium-card{min-height:138px}.fdex-rank-card .fdex-podium-card.top1{min-height:145px}}
