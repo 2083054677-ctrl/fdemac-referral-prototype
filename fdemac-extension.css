@@ -34,12 +34,12 @@
 /* 参考稿改造：三档邀请进度、通栏轮播、紧凑排行榜 */
 .fdex-track-card{padding:16px 18px}
 .fdex-track-card .fdex-head{align-items:center;margin-bottom:16px}
-.fdex-track-card .fdex-head>.fdex-track-copy{display:block;flex:0 0 210px;width:210px}
+.fdex-track-card .fdex-head>.fdex-track-copy{display:block;flex:0 0 344px;width:344px}
 .fdex-track-card .fdex-head h4{margin-bottom:0}
 .fdex-complete-label{color:#99a09b;font-size:10px}
 .fdex-complete-count{color:#69716c;font-size:11px;font-weight:600}
-.fdex-track-desc{margin:6px 0 0;color:var(--fx-muted);font-size:11px;line-height:1.55}
-.fdex-track-actions{display:grid;flex:1;gap:7px;max-width:470px}
+.fdex-track-desc{margin:6px 0 0;color:var(--fx-muted);font-size:11px;line-height:1.55;white-space:nowrap}
+.fdex-track-actions{display:grid;flex:1;gap:7px;max-width:302px}
 .fdex-invite-compact{gap:6px}
 .fdex-invite-compact .fdex-link{height:34px;padding:0 10px;font-size:11px}
 .fdex-invite-compact .fdex-btn{height:34px;padding:0 11px;font-size:11px;white-space:nowrap}
@@ -80,4 +80,4 @@
 .fdex-podium-user i{color:#7d857f;font-size:9px;font-style:normal}
 @media(max-width:760px){.fdex-track-card .fdex-head{align-items:flex-start}.fdex-track-card .fdex-steps{grid-template-columns:repeat(3,1fr);gap:0;padding:0}.fdex-track-card .fdex-steps:before{display:block;left:12%;right:12%}.fdex-track-card .fdex-step>b{white-space:normal}.fdex-podium-card.top1{min-height:105px}.fdex-podium-card.top2{min-height:98px}.fdex-podium-card.top3{min-height:94px}.fdex-follow-prize{width:100%}}
 @media(max-width:760px){.fdex-podium-card{min-height:138px;padding:32px 4px 8px}.fdex-podium-card.top1{min-height:145px}.fdex-podium-card.top2,.fdex-podium-card.top3{min-height:138px}.fdex-podium-prize{font-size:12px}.fdex-podium-card.top1 .fdex-podium-prize{font-size:14px}.fdex-podium-user{gap:4px}}
-@media(max-width:900px){.fdex-track-card .fdex-head{align-items:stretch;flex-direction:column}.fdex-track-actions{width:100%;max-width:none}.fdex-track-subactions{justify-content:flex-start}}
+@media(max-width:900px){.fdex-track-card .fdex-head{align-items:stretch;flex-direction:column}.fdex-track-card .fdex-head>.fdex-track-copy{width:100%;flex-basis:auto}.fdex-track-desc{white-space:normal}.fdex-track-actions{width:100%;max-width:none}.fdex-track-subactions{justify-content:flex-start}}
