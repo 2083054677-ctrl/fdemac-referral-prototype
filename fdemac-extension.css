@@ -169,3 +169,6 @@
 .fdex-branch>.fdex-rank-card .fdex-board{margin-top:0;border-top:0;border-left:1px solid var(--fx-line);padding-top:0;padding-left:14px}
 .fdex-branch>.fdex-rank-card>.fdex-head,.fdex-branch>.fdex-rank-card>.fdex-rules{grid-column:1/-1}
 @media(max-width:900px){.fdex-branch>.fdex-track-card .fdex-head{align-items:stretch;flex-direction:column}.fdex-branch>.fdex-track-card .fdex-head>.fdex-track-copy{width:100%;flex-basis:auto}.fdex-branch>.fdex-track-card .fdex-track-desc{white-space:normal}.fdex-branch>.fdex-track-card .fdex-track-actions{width:100%;max-width:none}.fdex-branch>.fdex-rank-card{display:block}.fdex-branch>.fdex-rank-card .fdex-board{margin-top:9px;border-top:1px solid var(--fx-line);border-left:0;padding-top:8px;padding-left:0}.fdex-branch>.fdex-rank-card>.fdex-head,.fdex-branch>.fdex-rank-card>.fdex-rules{grid-column:auto}}
+.fdex-branch>.fdex-rank-card{display:block}
+.fdex-branch>.fdex-rank-card .fdex-board{margin-top:12px;border-top:1px solid var(--fx-line);border-left:0;padding-top:10px;padding-left:0}
+.fdex-branch>.fdex-rank-card>.fdex-head,.fdex-branch>.fdex-rank-card>.fdex-rules{grid-column:auto}
