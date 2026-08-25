@@ -81,3 +81,8 @@
 @media(max-width:760px){.fdex-track-card .fdex-head{align-items:flex-start}.fdex-track-card .fdex-steps{grid-template-columns:repeat(3,1fr);gap:0;padding:0}.fdex-track-card .fdex-steps:before{display:block;left:12%;right:12%}.fdex-track-card .fdex-step>b{white-space:normal}.fdex-podium-card.top1{min-height:105px}.fdex-podium-card.top2{min-height:98px}.fdex-podium-card.top3{min-height:94px}.fdex-follow-prize{width:100%}}
 @media(max-width:760px){.fdex-podium-card{min-height:138px;padding:32px 4px 8px}.fdex-podium-card.top1{min-height:145px}.fdex-podium-card.top2,.fdex-podium-card.top3{min-height:138px}.fdex-podium-prize{font-size:12px}.fdex-podium-card.top1 .fdex-podium-prize{font-size:14px}.fdex-podium-user{gap:4px}}
 @media(max-width:900px){.fdex-track-card .fdex-head{align-items:stretch;flex-direction:column}.fdex-track-card .fdex-head>.fdex-track-copy{width:100%;flex-basis:auto}.fdex-track-desc{white-space:normal}.fdex-track-actions{width:100%;max-width:none}.fdex-track-subactions{justify-content:flex-start}}
+.fdex-track-card .fdex-steps{margin:10px -10px 0;padding:24px 0 0}
+.fdex-track-card .fdex-steps:before{left:4%;right:4%;top:34px;height:6px}
+.fdex-current-marker{position:absolute;z-index:3;left:clamp(31px,var(--progress),calc(100% - 31px));top:0;transform:translateX(-50%);white-space:nowrap}
+.fdex-current-marker span{display:block;border-radius:99px;background:#276f4f;padding:3px 8px;color:#fff;font-size:9px;font-weight:750;line-height:1.35;box-shadow:0 2px 7px rgba(34,97,69,.16)}
+.fdex-current-marker:after{content:"";display:block;width:1px;height:8px;margin:0 auto;background:#56a77b}
