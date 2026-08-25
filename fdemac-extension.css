@@ -142,3 +142,18 @@
 .fdex-branch>.fdex-rank-card .fdex-board{margin-top:12px;border-top:1px solid var(--fx-line);border-left:0;padding-top:11px;padding-left:0}
 .fdex-branch>.fdex-rank-card>.fdex-head,.fdex-branch>.fdex-rank-card>.fdex-rules{grid-column:auto}
 @media(max-width:900px){.fdex-branch>.fdex-track-card,.fdex-branch>.fdex-shelf,.fdex-branch>.fdex-rank-card{width:100%}.fdex-branch>.fdex-track-card .fdex-track-desc{white-space:normal}}
+.fdex-branch>.fdex-track-card,.fdex-branch>.fdex-shelf,.fdex-branch>.fdex-rank-card{margin-left:0;margin-right:auto}
+.fdex-branch>.fdex-track-card{padding:14px 16px}
+.fdex-branch>.fdex-track-card .fdex-steps{margin-top:7px;padding-top:21px}
+.fdex-branch>.fdex-track-card .fdex-steps:before{top:31px}
+.fdex-branch>.fdex-rank-card{padding:14px 16px}
+.fdex-branch>.fdex-rank-card>.fdex-head{margin-bottom:6px}
+.fdex-branch>.fdex-rank-card .fdex-podium-card{min-height:116px;padding-top:28px}
+.fdex-branch>.fdex-rank-card .fdex-podium-card.top1{min-height:122px}
+.fdex-branch>.fdex-rank-card .fdex-podium-avatar{width:36px;height:36px;margin-top:6px}
+.fdex-branch>.fdex-rank-card .fdex-board{margin-top:9px;padding-top:8px}
+.fdex-branch>.fdex-rank-card .fdex-row{min-height:31px}
+.fdex-branch>.fdex-rank-card .fdex-avatar{width:23px;height:23px}
+.fdex-branch>.fdex-rank-card .fdex-follow-prize{margin-top:6px;padding-top:6px;padding-bottom:6px}
+.fdex-branch>.fdex-rank-card .fdex-me{margin-top:6px;padding-top:7px;padding-bottom:7px}
+.fdex-branch>.fdex-rank-card .fdex-rules{margin-top:8px;padding-top:7px}
