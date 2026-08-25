@@ -157,3 +157,15 @@
 .fdex-branch>.fdex-rank-card .fdex-follow-prize{margin-top:6px;padding-top:6px;padding-bottom:6px}
 .fdex-branch>.fdex-rank-card .fdex-me{margin-top:6px;padding-top:7px;padding-bottom:7px}
 .fdex-branch>.fdex-rank-card .fdex-rules{margin-top:8px;padding-top:7px}
+.fdex-branch>.fdex-track-card,.fdex-branch>.fdex-shelf,.fdex-branch>.fdex-rank-card{width:100%}
+.fdex-branch>.fdex-track-card .fdex-head{align-items:center;flex-direction:row}
+.fdex-branch>.fdex-track-card .fdex-head>.fdex-track-copy{width:auto;flex:1 1 40%}
+.fdex-branch>.fdex-track-card .fdex-track-desc{font-size:11px;white-space:nowrap}
+.fdex-branch>.fdex-track-card .fdex-track-actions{width:min(100%,470px)}
+.fdex-branch>.fdex-shelf{grid-template-columns:150px minmax(0,1fr) auto;gap:10px}
+.fdex-branch>.fdex-shelf .fdex-shelf-title>img{width:36px;height:36px}
+.fdex-branch>.fdex-shelf .fdex-shelf-title span{display:block}
+.fdex-branch>.fdex-rank-card{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);column-gap:14px}
+.fdex-branch>.fdex-rank-card .fdex-board{margin-top:0;border-top:0;border-left:1px solid var(--fx-line);padding-top:0;padding-left:14px}
+.fdex-branch>.fdex-rank-card>.fdex-head,.fdex-branch>.fdex-rank-card>.fdex-rules{grid-column:1/-1}
+@media(max-width:900px){.fdex-branch>.fdex-track-card .fdex-head{align-items:stretch;flex-direction:column}.fdex-branch>.fdex-track-card .fdex-head>.fdex-track-copy{width:100%;flex-basis:auto}.fdex-branch>.fdex-track-card .fdex-track-desc{white-space:normal}.fdex-branch>.fdex-track-card .fdex-track-actions{width:100%;max-width:none}.fdex-branch>.fdex-rank-card{display:block}.fdex-branch>.fdex-rank-card .fdex-board{margin-top:9px;border-top:1px solid var(--fx-line);border-left:0;padding-top:8px;padding-left:0}.fdex-branch>.fdex-rank-card>.fdex-head,.fdex-branch>.fdex-rank-card>.fdex-rules{grid-column:auto}}
