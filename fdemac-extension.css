@@ -64,7 +64,7 @@
 .fdex-podium-card.top1{min-height:105px}.fdex-podium-card.top2{min-height:98px}.fdex-podium-card.top3{min-height:94px}
 .fdex-podium-avatar{display:block;width:35px;height:35px;margin:17px auto 5px;border:2px solid rgba(255,255,255,.9);border-radius:50%;background:#fff;object-fit:cover;box-shadow:0 2px 7px rgba(35,65,49,.12)}
 .fdex-podium-card.top1 .fdex-podium-avatar{width:41px;height:41px}
-.fdex-follow-prize{width:76%;margin-top:7px;padding:7px 10px;grid-template-columns:72px 1fr}
+.fdex-follow-prize{width:100%;margin:7px 0 0;padding:7px 10px;grid-template-columns:72px 1fr}
 .fdex-rank-card .fdex-row{min-height:35px;grid-template-columns:28px 1fr auto}
 .fdex-rank-card .fdex-avatar{width:25px;height:25px}
 .fdex-rank-card .fdex-rules{width:100%;margin-top:10px;padding-top:9px}
