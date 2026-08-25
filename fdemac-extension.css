@@ -62,4 +62,15 @@
 .fdex-rank-card .fdex-row{min-height:35px;grid-template-columns:28px 1fr auto}
 .fdex-rank-card .fdex-avatar{width:25px;height:25px}
 .fdex-rank-card .fdex-rules{width:100%;margin-top:10px;padding-top:9px}
+.fdex-podium-card{justify-content:flex-start;min-height:145px;padding-top:34px}
+.fdex-podium-card.top1{min-height:152px}.fdex-podium-card.top2,.fdex-podium-card.top3{min-height:145px}
+.fdex-podium-prize{display:block;color:#202722;font-size:15px;line-height:1.2;font-weight:850;letter-spacing:-.01em}
+.fdex-podium-card.top1 .fdex-podium-prize{color:#216c49;font-size:17px}
+.fdex-podium-card>em{display:block;margin-top:3px;color:#8b918c;font-size:9px;font-style:normal;font-weight:650}
+.fdex-podium-card .fdex-podium-avatar{width:34px;height:34px;margin:10px auto 4px}
+.fdex-podium-card.top1 .fdex-podium-avatar{width:38px;height:38px}
+.fdex-podium-user{display:flex!important;align-items:center;justify-content:center;gap:7px;margin-top:0!important;color:#5d655f!important}
+.fdex-podium-user b{color:#303632;font-size:10px}
+.fdex-podium-user i{color:#7d857f;font-size:9px;font-style:normal}
 @media(max-width:760px){.fdex-track-card .fdex-head{align-items:flex-start}.fdex-track-card .fdex-steps{grid-template-columns:repeat(3,1fr);gap:0;padding:0}.fdex-track-card .fdex-steps:before{display:block;left:12%;right:12%}.fdex-track-card .fdex-step>b{white-space:normal}.fdex-podium-card.top1{min-height:105px}.fdex-podium-card.top2{min-height:98px}.fdex-podium-card.top3{min-height:94px}.fdex-follow-prize{width:100%}}
+@media(max-width:760px){.fdex-podium-card{min-height:138px;padding:32px 4px 8px}.fdex-podium-card.top1{min-height:145px}.fdex-podium-card.top2,.fdex-podium-card.top3{min-height:138px}.fdex-podium-prize{font-size:12px}.fdex-podium-card.top1 .fdex-podium-prize{font-size:14px}.fdex-podium-user{gap:4px}}
